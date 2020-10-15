@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{22C04BA6-02EC-4193-BC66-6374E75F2E4F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CommissionRport</RootNamespace>
+    <AssemblyName>CommissionRport</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>D:\Website\CommissionRport\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://5cosmeda.homeunix.com:85/CommissionRport/</InstallUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>index.html</WebPage>
+    <ApplicationRevision>13</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4556EE60F4120FEC7730D8C125B7B542C8EC31BE</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CommissionRport_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="cBeautyComm, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\cBeautyComm\bin\Debug\cBeautyComm.dll</HintPath>
+    </Reference>
+    <Reference Include="Jacksiro.MdiTab">
+      <HintPath>..\kBeautySaleOrder\kBeautySaleOrder\bin\Debug\Jacksiro.MdiTab.dll</HintPath>
+    </Reference>
+    <Reference Include="kBeauty_Libary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\kBeauty_Libary\bin\Debug\kBeauty_Libary.dll</HintPath>
+    </Reference>
+    <Reference Include="MaiPrint">
+      <HintPath>..\งาน\References\MaiPrint.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="RestSharp">
+      <HintPath>..\ReportAx List\ReportAx\WebReport\bin\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI_ADJ\frmADJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_ADJ\frmADJ.Designer.cs">
+      <DependentUpon>frmADJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ADJ\frmLOG_CN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_ADJ\frmLOG_CN.Designer.cs">
+      <DependentUpon>frmLOG_CN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ADJ\frmLOG_WHCODE_new.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_ADJ\frmLOG_WHCODE_new.Designer.cs">
+      <DependentUpon>frmLOG_WHCODE_new.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ADJ\frmLOG_WholeSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_ADJ\frmLOG_WholeSale.Designer.cs">
+      <DependentUpon>frmLOG_WholeSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Main\frmFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Main\frmFirst.Designer.cs">
+      <DependentUpon>frmFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Main\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Main\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Report\ComOnline\frmCom_RetailReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Report\ComOnline\frmCom_RetailReport.Designer.cs">
+      <DependentUpon>frmCom_RetailReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Report\ComOnline\frmNumDay_ImportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Report\ComOnline\frmNumDay_ImportDialog.Designer.cs">
+      <DependentUpon>frmNumDay_ImportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Report\ComOnline\frmTaget_Online_ImportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Report\ComOnline\frmTaget_Online_ImportDialog.Designer.cs">
+      <DependentUpon>frmTaget_Online_ImportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Report\ComOnline\frmCom_OnlineReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Report\ComOnline\frmCom_OnlineReport.Designer.cs">
+      <DependentUpon>frmCom_OnlineReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Report\ComOnline\frmTaget_Retail_ImportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Report\ComOnline\frmTaget_Retail_ImportDialog.Designer.cs">
+      <DependentUpon>frmTaget_Retail_ImportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_Approve\frmBR_Approve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_Approve\frmBR_Approve.Designer.cs">
+      <DependentUpon>frmBR_Approve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_Check\Person\frmCheckPersonSaleOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_Check\Person\frmCheckPersonSaleOrder.Designer.cs">
+      <DependentUpon>frmCheckPersonSaleOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_Check\Person\frmCheckPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_Check\Person\frmCheckPerson.Designer.cs">
+      <DependentUpon>frmCheckPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_Check\Person\frmCheckPersonSaleOrder_byDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_Check\Person\frmCheckPersonSaleOrder_byDay.Designer.cs">
+      <DependentUpon>frmCheckPersonSaleOrder_byDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_Check\Person\frmCheckPerson_byDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_Check\Person\frmCheckPerson_byDay.Designer.cs">
+      <DependentUpon>frmCheckPerson_byDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_Check\Person\frmCheckPerson_Foodpanda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_Check\Person\frmCheckPerson_Foodpanda.Designer.cs">
+      <DependentUpon>frmCheckPerson_Foodpanda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_Check\Person\frmCheckPerson_Foodpanda_byDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_Check\Person\frmCheckPerson_Foodpanda_byDay.Designer.cs">
+      <DependentUpon>frmCheckPerson_Foodpanda_byDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_Check\Sale\frmSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_Check\Sale\frmSale.Designer.cs">
+      <DependentUpon>frmSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_Check\WholeSale\frmCheckWholeSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_Check\WholeSale\frmCheckWholeSale.Designer.cs">
+      <DependentUpon>frmCheckWholeSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Report\Detail\frmPersonDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Report\Detail\frmPersonDetails.Designer.cs">
+      <DependentUpon>frmPersonDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Report\Detail\frmWarehouseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_Report\Detail\frmWarehouseDetails.Designer.cs">
+      <DependentUpon>frmWarehouseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_Login\frmMainLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_Login\frmMainLogin.Designer.cs">
+      <DependentUpon>frmMainLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_MASTER\frmLOG_WholeSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_MASTER\frmLOG_WholeSale.Designer.cs">
+      <DependentUpon>frmLOG_WholeSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul_MASTER\frmWholeSale_MASTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ul_MASTER\frmWholeSale_MASTER.Designer.cs">
+      <DependentUpon>frmWholeSale_MASTER.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI_ADJ\frmADJ.resx">
+      <DependentUpon>frmADJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ADJ\frmLOG_CN.resx">
+      <DependentUpon>frmLOG_CN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ADJ\frmLOG_WHCODE_new.resx">
+      <DependentUpon>frmLOG_WHCODE_new.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_ADJ\frmLOG_WholeSale.resx">
+      <DependentUpon>frmLOG_WholeSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Main\frmFirst.resx">
+      <DependentUpon>frmFirst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Main\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Report\ComOnline\frmCom_RetailReport.resx">
+      <DependentUpon>frmCom_RetailReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Report\ComOnline\frmNumDay_ImportDialog.resx">
+      <DependentUpon>frmNumDay_ImportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Report\ComOnline\frmTaget_Online_ImportDialog.resx">
+      <DependentUpon>frmTaget_Online_ImportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Report\ComOnline\frmCom_OnlineReport.resx">
+      <DependentUpon>frmCom_OnlineReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Report\ComOnline\frmTaget_Retail_ImportDialog.resx">
+      <DependentUpon>frmTaget_Retail_ImportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_Approve\frmBR_Approve.resx">
+      <DependentUpon>frmBR_Approve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_Check\Person\frmCheckPersonSaleOrder.resx">
+      <DependentUpon>frmCheckPersonSaleOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_Check\Person\frmCheckPerson.resx">
+      <DependentUpon>frmCheckPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_Check\Person\frmCheckPersonSaleOrder_byDay.resx">
+      <DependentUpon>frmCheckPersonSaleOrder_byDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_Check\Person\frmCheckPerson_byDay.resx">
+      <DependentUpon>frmCheckPerson_byDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_Check\Person\frmCheckPerson_Foodpanda.resx">
+      <DependentUpon>frmCheckPerson_Foodpanda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_Check\Person\frmCheckPerson_Foodpanda_byDay.resx">
+      <DependentUpon>frmCheckPerson_Foodpanda_byDay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_Check\Sale\frmSale.resx">
+      <DependentUpon>frmSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_Check\WholeSale\frmCheckWholeSale.resx">
+      <DependentUpon>frmCheckWholeSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Report\Detail\frmPersonDetails.resx">
+      <DependentUpon>frmPersonDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_Report\Detail\frmWarehouseDetails.resx">
+      <DependentUpon>frmWarehouseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_Login\frmMainLogin.resx">
+      <DependentUpon>frmMainLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_MASTER\frmLOG_WholeSale.resx">
+      <DependentUpon>frmLOG_WholeSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul_MASTER\frmWholeSale_MASTER.resx">
+      <DependentUpon>frmWholeSale_MASTER.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="CommissionRport_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UL_Retail_online\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
