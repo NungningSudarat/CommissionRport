@@ -78,8 +78,9 @@
             this.ขายสงToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateProgramToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabControl1 = new Jacksiro.MdiTab.TabControl();
             this.iNCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabControl1 = new Jacksiro.MdiTab.TabControl();
+            this.รายงานToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -473,6 +474,14 @@
             this.updateProgramToolStripMenuItem.Text = "Update Program";
             this.updateProgramToolStripMenuItem.Click += new System.EventHandler(this.updateProgramToolStripMenuItem_Click);
             // 
+            // iNCToolStripMenuItem
+            // 
+            this.iNCToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.รายงานToolStripMenuItem1});
+            this.iNCToolStripMenuItem.Name = "iNCToolStripMenuItem";
+            this.iNCToolStripMenuItem.Size = new System.Drawing.Size(48, 23);
+            this.iNCToolStripMenuItem.Text = "INC";
+            // 
             // tabControl1
             // 
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -492,11 +501,11 @@
             this.tabControl1.TabPlusImage = null;
             this.tabControl1.TabPlusVisable = false;
             // 
-            // iNCToolStripMenuItem
+            // รายงานToolStripMenuItem1
             // 
-            this.iNCToolStripMenuItem.Name = "iNCToolStripMenuItem";
-            this.iNCToolStripMenuItem.Size = new System.Drawing.Size(48, 23);
-            this.iNCToolStripMenuItem.Text = "INC";
+            this.รายงานToolStripMenuItem1.Name = "รายงานToolStripMenuItem1";
+            this.รายงานToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
+            this.รายงานToolStripMenuItem1.Text = "รายงาน";
             // 
             // frmMain
             // 
@@ -573,5 +582,6 @@
 		private System.Windows.Forms.ToolStripMenuItem รายงานComOnlineComปลกToolStripMenuItem1;
 		private System.Windows.Forms.ToolStripSeparator toolStripMenuItem9;
         private System.Windows.Forms.ToolStripMenuItem iNCToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem รายงานToolStripMenuItem1;
     }
 }
